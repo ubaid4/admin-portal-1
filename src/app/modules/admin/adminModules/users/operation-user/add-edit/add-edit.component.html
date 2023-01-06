@@ -1,0 +1,92 @@
+<div class="app-content pt-3 p-md-3 p-lg-4">
+    <div class="container-xl py-4 ">
+        <div class="row ">
+            
+            <ul class="nav nav-pills mb-3 operational-user-tabs" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Info</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Roles</button>
+                </li>
+  
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <form class="admin-form ">
+                        <div class="row">
+                            <div class="form-group col-lg-6  col-12 col-sm-12">
+                                <label for="exampleInputEmail1">Name <sup>*</sup></label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+            
+                            <div class="form-group col-lg-6  col-12 col-sm-12">
+                                <label for="exampleInputEmail1">Email <sup>*</sup></label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            
+                            </div>
+                        </div>
+            
+                        <div class="row">
+                            <div class="form-group col-lg-6  col-12 col-sm-12">
+                                <label for="exampleInputEmail1">Phone Number <sup>*</sup></label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+            
+                            <div class="form-group col-lg-6  col-12 col-sm-12">
+                                <label for="exampleInputEmail1">Passsword <sup>*</sup></label>
+                                <!-- <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> -->
+                                <div  class="input-group mb-3">
+                                    <input type="password" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                                    <button class="btn btn-outline-secondary darbak-password" darbakPassword type="button" id="button-addon1"><span><i class="fa fa-eye-slash"></i></span></button>
+                                  </div>
+                            </div>
+                        </div>
+            
+            
+                     
+            
+            
+                        <div class="row">
+                            <div class="form-group col-lg-6  col-12 col-sm-12 btn-area d-flex justify-content-between ">
+                                <button type="submit" class="btn app-btn-primary btn-submit">{{editMode?'Update':'Save'}}</button>
+                                <button type="submit" class="btn app-btn-secondary btn-block btn-cancel">cancel</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+
+                    <form class="admin-form ">
+                        <div class="row">
+                            <div class="form-group col-lg-6  col-12 col-sm-12">
+                                <label for="exampleInputEmail1">Roles <sup>*</sup></label>
+                                <!-- <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> -->
+                                <angular2-multiselect [data]="dropdownList"  name="something" [(ngModel)]="selectedItems"
+                                [settings]="dropdownSettings" 
+                                (onSelect)="onItemSelect($event)" 
+                                (onDeSelect)="OnItemDeSelect($event)"
+                                (onSelectAll)="onSelectAll($event)"
+                                (onDeSelectAll)="onDeSelectAll($event)"></angular2-multiselect>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-6  col-12 col-sm-12 btn-area d-flex justify-content-between ">
+                                <button type="submit" class="btn app-btn-primary btn-submit">{{editMode?'Update':'Save'}}</button>
+                                <button type="submit" class="btn app-btn-secondary btn-block btn-cancel">cancel</button>
+                            </div>
+                        </div>
+                    </form>
+
+
+                </div>
+               
+              </div>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</div>

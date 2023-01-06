@@ -1,0 +1,211 @@
+<div class="app-content pt-3 p-md-3 p-lg-4">
+  <div class="container-xl py-4">
+    <h1 class="app-page-title">Overview</h1>
+
+
+    <!--//app-card-->
+
+    <div class="row g-4 mb-4">
+      <div class="col-12 col-lg-3">
+        <div class="app-card app-card-stat shadow-sm h-100">
+          <div class="app-card-body p-3 p-lg-4">
+            <div class="stat-icon darbak-bg ">
+              <i class="fa-solid fa-layer-group"></i>
+            </div>
+            <h4 class="stats-type mb-1">Total Sales</h4>
+            <div class="stats-figure darbak-red Segoe-UI-Bold">4</div>
+            <div class="stats-meta ">
+              Active <span class="darbak-red stat-position">40</span>
+            </div>
+            <div class="stats-meta ">
+              Inactive <span class="darbak-red stat-position">8</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-12 col-lg-3">
+        <div class="app-card app-card-stat shadow-sm h-100">
+          <div class="app-card-body p-3 p-lg-4">
+            <div class="stat-icon darbak-bg ">
+              <i class="fa-solid fa-car"></i>
+            </div>
+            <h4 class="stats-type mb-1">Total Sales</h4>
+            <div class="stats-figure darbak-red Segoe-UI-Bold">4</div>
+            <div class="stats-meta ">
+              Active <span class="darbak-red stat-position">40</span>
+            </div>
+            <div class="stats-meta ">
+              Inactive <span class="darbak-red stat-position">8</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-12 col-lg-3">
+        <div class="app-card app-card-stat shadow-sm h-100">
+          <div class="app-card-body p-3 p-lg-4">
+            <div class="stat-icon darbak-bg ">
+              <i class="fa-solid fa-hand-holding"></i>
+            </div>
+            <h4 class="stats-type mb-1">Total Sales</h4>
+            <div class="stats-figure darbak-red Segoe-UI-Bold">4</div>
+            <div class="stats-meta ">
+              Active <span class="darbak-red stat-position">40</span>
+            </div>
+            <div class="stats-meta ">
+              Inactive <span class="darbak-red stat-position">8</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-12 col-lg-3">
+        <div class="app-card app-card-stat shadow-sm h-100">
+          <div class="app-card-body p-3 p-lg-4">
+            <div class="stat-icon darbak-bg ">
+              <i class="fa-solid fa-user-group"></i>
+            </div>
+            <h4 class="stats-type mb-1">Total Sales</h4>
+            <div class="stats-figure darbak-red Segoe-UI-Bold">4</div>
+            <div class="stats-meta ">
+              Active <span class="darbak-red stat-position">40</span>
+            </div>
+            <div class="stats-meta ">
+              Inactive <span class="darbak-red stat-position">8</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <!--//row-->
+    <div class="row g-4 mb-4 py-5">
+      <div class="col-12 col-lg-8">
+        <div class="app-card app-card-chart h-100 shadow-sm">
+          <div class="app-card-header p-3">
+            <div class="row justify-content-between align-items-center">
+              <div class="col-auto">
+                <h4 class="app-card-title">Request Status</h4>
+              </div>
+              <!--//col-->
+              <div class="col-auto">
+                <div class="card-header-action">
+                  <div class="mb-3 d-flex">
+                    <select class="form-select form-select-sm ms-auto d-inline-flex w-auto">
+                      <option value="1" selected>This week</option>
+                      <option value="2">Today</option>
+                      <option value="3">This Month</option>
+                      <option value="3">This Year</option>
+                    </select>
+                  </div>
+                </div>
+                <!--//card-header-actions-->
+              </div>
+              <!--//col-->
+            </div>
+            <!--//row-->
+          </div>
+          <!--//app-card-header-->
+          <div class="row app-card-body">
+
+
+
+            <div class="chart-container col-lg-8 col-12">
+              <!-- <canvas id="canvas-linechart"></canvas> -->
+
+              <div id="chart1">
+                <apx-chart [series]="chartOptions1.series" [chart]="chartOptions1.chart"
+                  [dataLabels]="chartOptions1.dataLabels" [plotOptions]="chartOptions1.plotOptions"
+                  [yaxis]="chartOptions1.yaxis" [legend]="chartOptions1.legend" [fill]="chartOptions1.fill"
+                  [stroke]="chartOptions1.stroke" [tooltip]="chartOptions1.tooltip" [xaxis]="chartOptions1.xaxis"
+                  [colors]="chartOptions1.colors"></apx-chart>
+              </div>
+
+            </div>
+            <div class="chart-container col-lg-4 col-12 align-items-center progress-bar-position" style="">
+              <circle-progress [percent]="75" [radius]="70" [outerStrokeWidth]="16" [innerStrokeWidth]="0"
+                [outerStrokeColor]="'#c7001e'" [innerStrokeColor]="'#C7E596'" [animation]="true"
+                [animationDuration]="500"></circle-progress>
+              <p style="text-align: center"> <i class="fa-solid fa-circle darbak-red"></i> Total Requests</p>
+            </div>
+
+
+          </div>
+          <!--//app-card-body-->
+        </div>
+        <!--//app-card-->
+      </div>
+
+
+
+
+      <!--//col-->
+      <div class="col-12 col-lg-4">
+        <div class="app-card app-card-chart h-100 shadow-sm">
+          <div style="padding-bottom: 2rem !important;margin-top: 0.5rem;" class="app-card-header p-3">
+            <div class="row justify-content-between align-items-center">
+              <div class="col-auto">
+                <h4 class="app-card-title">Financial Status</h4>
+              </div>
+
+            </div>
+            <!--//row-->
+          </div>
+          <!--//app-card-header-->
+          <div class="row app-card-body">
+
+            <div class="col-12 chart-container ">
+              <select style="padding-left: 2rem; border: none; margin-top: 1rem;" class="form-select form-select-sm ms-auto d-inline-flex w-auto">
+                <option value="1" selected>This week</option>
+                <option value="2">Today</option>
+                <option value="3">This Month</option>
+                <option value="3">This Year</option>
+              </select>
+              <h3 style="padding-left: 2rem; padding-top: 1rem;">45.67 US</h3>
+              <p style="padding-left: 2rem;" > <span class="darbak-green">2.6% <i class="fa-solid fa-arrow-up"></i> </span> than last month </p>
+              <div id="chart">
+                <apx-chart [series]="chartOptions.series" [chart]="chartOptions.chart" [xaxis]="chartOptions.xaxis"
+                  [stroke]="chartOptions.stroke" [tooltip]="chartOptions.tooltip" [dataLabels]="chartOptions.dataLabels"
+                  [colors]="chartOptions.colors" [grid]="chartOptions.grid"></apx-chart>
+              </div>
+             
+
+              <!-- <canvas id="canvas-barchart"></canvas> -->
+
+            </div>
+
+          </div>
+
+
+          <!--//app-card-body-->
+        </div>
+        <!--//app-card-->
+      </div>
+      <!--//col-->
+
+
+     
+
+  
+
+    </div>
+
+
+  </div>
+</div>

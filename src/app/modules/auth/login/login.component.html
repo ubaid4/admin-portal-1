@@ -1,0 +1,84 @@
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-lg-6 col-sm-12 col-12  col-md-6 col-xl-6 image-side">
+            <div class="darbak-logo">
+                <img class="login-darbak-logo" src="./../../../../assets/images/darbak_logo.png" alt="">
+            </div>
+            <div class="login-image">
+                <img class="darbak-img-login" src="./../../../../assets/images/login-image.png" alt="">
+            </div>
+        </div>
+        <div class="col-lg-6 p-0 col-sm-12 col-md-6 col-xl-6 login-form-padding" >
+            <div class="form-side ">
+                <h2>Welcome To Darbak</h2>
+                <h6>Login To Your Account</h6>
+                <form class="admin-form" style="margin-top: 4.5rem">
+                    <div class="row">
+                        <div class="form-group col-lg-9  col-12 col-sm-12">
+                            <label for="exampleInputEmail1">Email<sup>*</sup></label>
+                            <input type="text" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-lg-9  col-12 col-sm-12">
+                            <label for="exampleInputEmail1">Password <sup>*</sup></label>
+                           
+                                <div  class="input-group mb-3">
+                                    <input type="password" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                                    <button class="btn btn-outline-secondary darbak-password" darbakPassword type="button" id="button-addon1"><span><i class="fa fa-eye-slash"></i></span></button>
+                                  </div>
+                               
+
+                                  
+                        </div>
+                    </div>
+
+<div class="row">
+                    <div class="form-group col-lg-6  col-12 col-sm-12">
+                        <label class="checkbox-heading" for="exampleInputEmail1">Language <sup>*</sup></label>
+                        <div class="custom-control custom-radio">
+    
+    
+                            <div class="form-check">
+                                <input class="custom-control-input" type="radio" name="Sizecheckbox" checked
+                                    id="smallSizecheckbox">
+                                <label class="form-check-label checkbox-label" for="smallSizecheckbox">
+                                    English
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="custom-control-input" type="radio" name="Sizecheckbox"
+                                    id="mediumSizecheckbox">
+                                <label class="form-check-label checkbox-label" for="mediumSizecheckbox">
+                                    Arabic
+                                </label>
+                            </div>
+    
+                          
+    
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="row mt-5">
+                    <div class="form-group col-lg-9  col-12 col-sm-12 btn-area d-flex justify-content-between ">
+                        <a [routerLink]="['/admin/dashboard']"  style="width: 100%;">
+
+                            <button   class="btn app-btn-primary " style="width: 100%;">Login</button>
+                            
+                        </a>
+                      
+                    </div>
+                </div>
+                </form>
+
+
+            </div>
+        </div>
+
+    </div>
+
+</div>

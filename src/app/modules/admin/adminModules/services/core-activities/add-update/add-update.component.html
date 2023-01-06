@@ -1,0 +1,130 @@
+<div class="app-content pt-3 p-md-3 p-lg-4">
+    <div class="container-xl py-4">
+        <h1 *ngIf="!editMode" class="app-page-title">Add New Core Activity</h1>
+        <h1 *ngIf="editMode" class="app-page-title">Update Core Activity</h1>
+
+
+        <form class="admin-form ">
+            <div class="row">
+                <div class="form-group col-lg-6  col-12 col-sm-12">
+                    <label for="exampleInputEmail1">Core Activity Name / English <sup>*</sup></label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+
+                <div class="form-group col-lg-6  col-12 col-sm-12">
+                    <label for="exampleInputEmail1">Core Activity Name / Arabic <sup>*</sup></label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-lg-6  col-12 col-sm-12">
+                    <label for="exampleInputEmail1">Upload Icon <sup>*</sup></label>
+                    <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+
+                <div class="form-group col-lg-6  col-12 col-sm-12">
+                    <label for="exampleInputEmail1">Order Number <sup>*</sup></label>
+                    <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="form-group col-lg-6  col-12 col-sm-12">
+                    <label>Link to Category <sup>*</sup></label><br>
+                    <!-- <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> -->
+                    
+                    <select  class="form-select form-select-sm form-control ">
+                        <option value="1" selected>This week</option>
+                        <option value="2">Today</option>
+                        <option value="3">This Month</option>
+                        <option value="3">This Year</option>
+                      </select>
+
+
+
+                </div>
+
+                
+            </div>
+
+
+
+            <div class="row">
+                <div class="form-group col-lg-6  col-12 col-sm-12">
+                    <label class="checkbox-heading" for="exampleInputEmail1">Status <sup>*</sup></label>
+                    <div class="custom-control custom-radio">
+
+
+                        <div class="form-check">
+                            <input class="custom-control-input" type="radio" name="StatusCheckbox" checked
+                                id="enableStatusCheckbox">
+                            <label class="form-check-label checkbox-label" for="enableStatusCheckbox">
+                                Enable
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="custom-control-input" type="radio" name="StatusCheckbox"
+                                id="disableStatusCheckbox">
+                            <label class="form-check-label checkbox-label" for="disableStatusCheckbox">
+                                Disable
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="custom-control-input" type="radio" name="StatusCheckbox"
+                                id="comingSoonStatusCheckbox">
+                            <label class="form-check-label checkbox-label" for="comingSoonStatusCheckbox">
+                                Coming Soon
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="form-group col-lg-6  col-12 col-sm-12">
+                    <label class="checkbox-heading" for="exampleInputEmail1">Size <sup>*</sup></label>
+                    <div class="custom-control custom-radio">
+
+
+                        <div class="form-check">
+                            <input class="custom-control-input" type="radio" name="Sizecheckbox" checked
+                                id="smallSizecheckbox">
+                            <label class="form-check-label checkbox-label" for="smallSizecheckbox">
+                                Small
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="custom-control-input" type="radio" name="Sizecheckbox"
+                                id="mediumSizecheckbox">
+                            <label class="form-check-label checkbox-label" for="mediumSizecheckbox">
+                                Medium
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="custom-control-input" type="radio" name="Sizecheckbox" id="largeSizecheckbox">
+                            <label class="form-check-label checkbox-label" for="largeSizecheckbox">
+                                Large
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="row">
+                <div class="form-group col-lg-6  col-12 col-sm-12 btn-area d-flex justify-content-between ">
+                    <button type="submit" class="btn app-btn-primary btn-submit">{{editMode?'Update':'Save'}}</button>
+                    <button type="submit" class="btn app-btn-secondary btn-block btn-cancel">cancel</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
